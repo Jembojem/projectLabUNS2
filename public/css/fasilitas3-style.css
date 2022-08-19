@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 4px;
+  width: 100%;
+}
+
+/* HERO SECTION */
+#fasilitas3-hero {
+  font-size: 1em;
+  width: 100%;
+  height: 100vh;
+  display: relative;
+}
+#fasilitas3-hero img {
+  width: 100%;
+  height: 100%;
+}
+#fasilitas3-hero .f3-hero-text {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+}
+#fasilitas3-hero .f3-hero-text a {
+  text-decoration: none;
+}
+#fasilitas3-hero .f3-hero-text a img {
+  width: 150px;
+}
+#fasilitas3-hero .f3-hero-text a h2 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 17em;
+  line-height: 150%;
+  align-self: center;
+  margin: 0;
+}
+#fasilitas3-hero .f3-hero-text h1 {
+  font-weight: 400;
+  font-size: 12em;
+  line-height: 150%;
+  color: #ffffff;
+}
+#fasilitas3-hero .f3-hero-text p {
+  font-weight: 400;
+  font-size: 6em;
+  line-height: 150%;
+  color: #ffffff;
+}
+#fasilitas3-hero .f3-hero-text button {
+  width: 180px;
+  height: 65px;
+  font-weight: 400;
+  font-size: 6em;
+  line-height: 150%;
+  background: rgba(158, 158, 158, 0.64);
+  border-radius: 47px;
+  color: #fff;
+}
+
+/* ALBUM SECTION */
+#fasilitas3-album {
+  font-size: 1em;
+  position: relative;
+  width: 100%;
+  background: url("/img/fasilitas3/bg-album.png");
+}
+#fasilitas3-album .row {
+  padding: 0px 100px 260px;
+}
+#fasilitas3-album .row:nth-child(1) {
+  padding-top: 240px;
+}
+#fasilitas3-album .row:nth-child(3) {
+  padding-bottom: 300px;
+}
+#fasilitas3-album .row .col {
+  padding: 0;
+}
+#fasilitas3-album img {
+  width: 95%;
+  max-width: 1400px;
+  min-width: 340px;
+  margin: 0 auto 50px;
+}
+#fasilitas3-album h2 {
+  font-weight: 600;
+  font-size: 10em;
+  line-height: 150%;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+#fasilitas3-album p {
+  font-weight: 300;
+  font-size: 6em;
+  line-height: 150%;
+  color: #ffffff;
+}
+
+/* LIST SECTION */
+#fasilitas3-list {
+  font-size: 1em;
+  position: relative;
+  width: 100%;
+}
+#fasilitas3-list h1 {
+  padding: 135px 100px 80px 100px;
+  font-weight: 600;
+  font-size: 16em;
+  line-height: 150%;
+  color: #0593d2;
+}
+#fasilitas3-list .row {
+  margin: 0 100px;
+  margin-bottom: 150px;
+}
+#fasilitas3-list .row .col {
+  display: flex;
+  align-items: center;
+}
+#fasilitas3-list img {
+  padding-bottom: 20px;
+  width: 90%;
+  min-width: 350px;
+}
+#fasilitas3-list li {
+  align-self: center;
+  font-weight: 400;
+  font-size: 10em;
+  line-height: 150%;
+  color: rgba(33, 27, 61, 0.84);
+}
+
+/* PARTNER SECTION */
+#fasilitas3-partner {
+  width: 100%;
+  position: relative;
+  padding: 0 80px 150px;
+}
+#fasilitas3-partner h1 {
+  font-weight: 600;
+  font-size: 16em;
+  line-height: 150%;
+  color: #0593d2;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 1200px) {
+  #fasilitas3-hero .f3-hero-text a {
+    display: block !important;
+  }
+  #fasilitas3-album h2,
+  #fasilitas3-album p {
+    text-align: center;
+  }
+  #fasilitas3-album .row {
+    padding: 0px 100px 220px;
+  }
+  #fasilitas3-album .row .col:nth-child(1),
+  #fasilitas3-list .row .col:nth-child(1) {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  #fasilitas3-album .row {
+    padding: 0px 30px 150px;
+  }
+}
+@media (max-width: 576px) {
+  #fasilitas3-partner h1,
+  #fasilitas3-list h1 {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    font-size: 14em;
+  }
+  #fasilitas3-list ul li {
+    font-size: 7em;
+    list-style: none;
+  }
+  #fasilitas3-list .row {
+    margin: 0 auto;
+  }
+}
+
+/* MIN WIDTH */
+@media (min-width: 1200px) {
+  #fasilitas3-list h2 {
+    width: 85%;
+  }
+}

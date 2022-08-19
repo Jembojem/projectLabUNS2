@@ -1,0 +1,18 @@
+.fc-unthemed td.fc-today {
+    background: #dcf8ff;
+}
+
+.fc-center {
+    color: #0092cd;
+}
+
+.fc-row.fc-widget-header {
+    color: #0087be;
+    background-color: #f5feff;
+}
+.modal-header.modal-calander {
+    background-color: #3a87ad;
+}
+h5#modalTitle {
+    color: white;
+}

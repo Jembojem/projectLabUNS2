@@ -1,0 +1,38 @@
+/* NAVBAR */
+nav .navbar {
+  transition: all 2s ease-out;
+}
+.navbar .container-fluid.anim-navbar-open {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+/* nav .navbar .container-fluid.anim-navbar-open .nav-link {
+  color: white;
+} */
+.anim-navbar-open {
+  transition: top 0.5s ease-out;
+  background: #fff !important;
+  width: 100% !important;
+  display: block;
+  position: fixed;
+  top: 0;
+  margin: 0;
+}
+.anim-navbar-close {
+  display: none;
+  transition: top 0.5s ease-out;
+  position: fixed;
+  top: -100px;
+}
+
+/* PRICING VIDEOS*/
+
+#pricing .row .col-12.active {
+  transition: bottom 2s ease-out;
+  position: relative;
+  bottom: 10px;
+}
+#pricing .container-fluid.active {
+  transition: background-color 1s ease-out;
+  background-color: black;
+}

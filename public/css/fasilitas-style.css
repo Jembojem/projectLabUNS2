@@ -1,0 +1,423 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300,400;0,500;0,600;0,700;0,800;1,700&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  background-color: #000000;
+}
+/* NAV */
+.navbar {
+  position: absolute;
+}
+.navbar .navbar-nav .nav-link {
+  color: white;
+}
+.navbar .navbar-nav .nav-link.active {
+  color: #011a25;
+}
+/* BUTTON */
+.button-primary {
+  color: white;
+  /* background: rgba(0, 0, 0, 0.37); */
+  background: rgba(16, 11, 11, 0.74);
+  border: none;
+}
+.button-primary:hover {
+  background: white;
+  color: rgba(16, 11, 11, 0.74);
+}
+.button-secondary:hover {
+  background: white;
+  color: rgba(16, 11, 11, 0.38);
+}
+.button-secondary {
+  color: white;
+  /* background: rgba(253, 253, 253, 0.15); */
+  background: rgba(16, 11, 11, 0.38);
+  border: none;
+}
+
+/* HERO SECTION */
+#hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url("/img/fasilitas/hero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+/* #hero img {
+  padding: 0;
+  width: 100%;
+  height: 100%;
+} */
+#hero .hero-text {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  top: auto;
+  left: auto;
+  width: 65%;
+  max-width: 950px;
+  height: 185px;
+  margin-bottom: 60px;
+}
+#hero .hero-text h1 {
+  font-weight: 800;
+  line-height: 35.3%;
+  font-size: 85px;
+  color: #fff;
+  margin-bottom: 32px;
+}
+#hero .hero-text p {
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0.1em;
+  font-size: 24px;
+  color: #fff;
+}
+#hero .btn.reservation,
+#hero .btn.reservation a {
+  width: 155px;
+  height: 36px;
+  font-weight: 400;
+  font-size: 24px;
+  background-color: transparent;
+  color: #fff;
+  text-decoration: none;
+  padding: 0;
+}
+#hero .hero-text .img-reservation {
+  width: 50px;
+  height: auto;
+  margin-right: 20px;
+}
+
+/* ALBUM SECTION */
+#album {
+  width: 100%;
+  margin-bottom: 205px;
+}
+#album h2 {
+  font-weight: 700;
+  font-style: italic;
+  font-size: 64px;
+  line-height: 96px;
+  -webkit-text-fill-color: #070000;
+  -webkit-text-stroke-color: #fff;
+  -webkit-text-stroke-width: 3px;
+  /* margin: 85px 0 40px 110px; */
+  margin: 50px 0 100px 110px;
+}
+#album .album-card h3 {
+  font-weight: 700;
+  font-style: italic;
+  font-size: 32px;
+  color: #e4041f;
+  line-height: 48px;
+}
+#album .album-card p {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 36px;
+  color: #211b3d;
+}
+#album .album-card {
+  position: relative;
+}
+/* ALBUM - MASONRY */
+#album .album-masonry {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(10, auto);
+  grid-column-gap: 40px;
+  grid-row-gap: 80px;
+  margin: 0 auto;
+  width: 80%;
+}
+
+/* ALBUM - CARD1 */
+#album .album-card.card-1 {
+  min-height: 701px;
+  background-color: #f9f9f9;
+  padding: 0;
+  grid-column: 1/2;
+  grid-row: 1/7;
+}
+#album .album-card.card-1 h3 {
+  margin: 0;
+  padding: 28px 0 35px 24px;
+}
+#album .album-card.card-1 p.quote {
+  font-weight: 300;
+  font-style: italic;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000;
+  padding: 0px;
+  margin: 0 auto 130px;
+  width: 90%;
+  text-align: center;
+}
+#album .album-card.card-1 img {
+  width: 52%;
+  height: auto;
+  position: absolute;
+  bottom: -40px;
+  left: -45px;
+}
+/* ALBUM - CARD2 */
+#album .album-card.card-2 {
+  min-height: 557px;
+  grid-column: 2/3;
+  grid-row: 1/5;
+  background-color: #282828;
+}
+#album .album-card.card-2 h3 {
+  margin: 0;
+  padding: 58px 0 73px 46px;
+}
+#album .album-card.card-2 p {
+  color: #fff;
+  width: 90%;
+  margin: 0 auto 48px;
+}
+#album .album-card.card-2 img {
+  display: flex;
+  width: 90%;
+  margin: 0 auto 15px;
+}
+/* ALBUM - CARD3 */
+#album .album-card.card-3 {
+  min-height: 476px;
+  grid-column: 1/2;
+  grid-row: 7/11;
+  background-color: #282828;
+}
+#album .album-card.card-3 h3 {
+  padding: 19px 0 18px 44px;
+}
+#album .album-card.card-3 p {
+  max-width: 70%;
+  margin: 0px 57px 70px 77px;
+  color: #fff;
+}
+#album .album-card.card-3 img {
+  width: 80%;
+  position: absolute;
+  bottom: -18%;
+  left: 7%;
+}
+/* ALBUM - CARD4 */
+#album .album-card.card-4 {
+  min-height: 626px;
+  grid-column: 2/3;
+  grid-row: 5/11;
+  background-color: #f9f9f9;
+}
+#album .album-card.card-4 h3 {
+  margin: 108px 0 40px 25px;
+}
+#album .album-card.card-4 p {
+  max-width: 50%;
+  color: #211b3d;
+  margin-left: 25px;
+}
+#album .album-card.card-4 img {
+  width: 67%;
+  position: absolute;
+  top: 12%;
+  left: 45%;
+}
+
+/* FASILITAS - SPECS */
+#specs {
+  position: relative;
+  background-image: url("/img/fasilitas/specs.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 800px;
+}
+#specs .img-bg {
+  width: 100%;
+  min-height: 900px;
+}
+#specs .container-fluid {
+  position: relative;
+  top: 0;
+  padding: 50px 0 26px 102px;
+}
+#specs h2 {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 96px;
+  letter-spacing: 3.2px;
+  -webkit-text-fill-color: #000;
+  -webkit-text-stroke-color: #fff;
+  -webkit-text-stroke-width: 2px;
+  margin-bottom: 70px;
+}
+#specs .list-specs ul li {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #fff;
+}
+#specs .img-1 {
+  width: 315px;
+  position: absolute;
+  bottom: 50px;
+  right: 215px;
+}
+#specs .img-2 {
+  width: 100px;
+  position: absolute;
+  bottom: 50px;
+  right: 100px;
+}
+
+/* GALLERY SECTION */
+#gallery h2 {
+  font-weight: 700;
+  font-style: italic;
+  font-size: 64px;
+  line-height: 96px;
+  letter-spacing: 6.4px;
+  -webkit-text-fill-color: #070000;
+  -webkit-text-stroke-color: #ffffff;
+  -webkit-text-stroke: 3px;
+  margin: 90px 0 50px;
+}
+
+/* PARTNERS SECTION */
+#partners img.img-partners {
+  width: 380px;
+  margin: 150px 0 70px 100px;
+}
+#partners h2 {
+  font-weight: 700;
+  font-style: italic;
+  font-size: 64px;
+  line-height: 96px;
+  letter-spacing: 6.4px;
+  -webkit-text-fill-color: #070000;
+  -webkit-text-stroke-color: #ffffff;
+  -webkit-text-stroke: 3px;
+  margin: 90px 0 50px;
+  margin: 150px 0 70px 100px;
+}
+#partners .container {
+  margin-bottom: 200px;
+}
+#partners .row {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#partners .row .col {
+  min-height: 120px;
+}
+#partners .col img {
+  max-width: 50%;
+  max-height: 100%;
+}
+
+/* RESPONSIVE */
+@media (max-width: 576px) {
+  #album .album-masonry {
+    display: block;
+  }
+  #album .album-card.card-1 h3,
+  #album .album-card.card-2 h3,
+  #album .album-card.card-3 h3,
+  #album .album-card.card-4 h3 {
+    margin: auto;
+    padding: 20px 5px auto;
+    text-align: center;
+  }
+  #hero .hero-text {
+    height: auto;
+    top: 80px;
+  }
+  #hero .hero-text h1 {
+    line-height: 120%;
+    font-size: 48px;
+  }
+  #hero .hero-text p {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 1200px) {
+  #album h2,
+  #specs h2,
+  #gallery h2,
+  #partners h2 {
+    margin: 50px auto 80px;
+    text-align: center;
+  }
+  #album .album-masonry {
+    display: block;
+  }
+  #album .album-masonry .album-card {
+    margin-bottom: 70px;
+  }
+  #album .album-card.card-1 h3,
+  #album .album-card.card-2 h3,
+  #album .album-card.card-3 h3,
+  #album .album-card.card-4 h3 {
+    margin: auto;
+    padding: 50px 5px 80px;
+    text-align: center;
+  }
+  #album .album-card.card1 {
+    min-height: fit-content;
+  }
+  #specs .container-fluid {
+    padding: 0;
+    position: relative;
+  }
+  #specs .list-specs {
+    display: block !important;
+    width: 50%;
+    margin: auto;
+  }
+  #specs .specs-img {
+    position: relative;
+    width: 100%;
+    margin: 70px auto;
+    text-align: center;
+  }
+  #specs .img-1,
+  #specs .img-2 {
+    position: relative;
+    bottom: auto;
+    right: auto;
+  }
+  #album .album-masonry .album-card .row:nth-child(2) {
+    display: none;
+  }
+  #hero .container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #hero .hero-text {
+    height: auto;
+    top: 80px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: auto;
+    right: auto;
+    left: auto;
+  }
+  #hero .hero-text h1 {
+    line-height: 120%;
+    font-size: 60px;
+  }
+  #hero .hero-text p {
+    margin-bottom: 50px;
+  }
+}

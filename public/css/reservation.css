@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+p {
+	color: grey;
+}
+
+#heading {
+	text-transform: uppercase;
+	color: #02ACEA;
+	font-weight: normal;
+}
+
+#msform {
+    text-align: center;
+    position: relative;
+    margin-top: 20px;
+}
+
+#msform fieldset {
+    background: white;
+    border: 0 none;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 20px;
+
+    /*stacking fieldsets above each other*/
+    position: relative;
+}
+
+.form-card {
+	text-align: left;
+}
+
+/*Hide all except first fieldset*/
+#msform fieldset:not(:first-of-type) {
+    display: none;
+}
+
+#msform input, #msform textarea {
+    padding: 8px 15px 8px 15px;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    margin-bottom: 25px;
+    margin-top: 2px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: montserrat;
+    color: #2C3E50;
+    background-color: #ECEFF1;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+#msform input:focus, #msform textarea:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid #02ACEA;
+    outline-width: 0;
+}
+
+/*Next Buttons*/
+#msform .action-button {
+    width: 100px;
+    background: #02ACEA;
+    font-weight: normal;
+    color: white;
+    border: 0 none;
+    border-radius: 0px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 0px 10px 5px;
+    float: right;
+}
+
+#msform .action-button:hover, #msform .action-button:focus {
+    background-color: #02ACEA;
+}
+
+/*Previous Buttons*/
+#msform .action-button-previous {
+    width: 100px;
+    background: #616161;
+    font-weight: normal;
+    color: white;
+    border: 0 none;
+    border-radius: 0px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px 10px 0px;
+    float: right;
+}
+
+#msform .action-button-previous:hover, #msform .action-button-previous:focus {
+    background-color: #000000;
+}
+
+/*The background card*/
+.card {
+    z-index: 0;
+    border: none;
+    position: relative;
+}
+
+/*FieldSet headings*/
+.fs-title {
+    font-size: 25px;
+    color: #02ACEA;
+    margin-bottom: 15px;
+    font-weight: normal;
+    text-align: left;
+}
+
+.purple-text {
+	color: #02ACEA;
+    font-weight: normal;
+}
+
+/*Step Count*/
+.steps {
+	font-size: 25px;
+    color: gray;
+    margin-bottom: 10px;
+    font-weight: normal;
+    text-align: right;
+}
+
+/*Field names*/
+.fieldlabels {
+	color: gray;
+	text-align: left;
+}
+
+/*Icon progressbar*/
+#progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    color: lightgrey;
+}
+
+#progressbar .active {
+    color: #02ACEA;
+}
+
+#progressbar li {
+    list-style-type: none;
+    font-size: 15px;
+    width: 33%;
+    float: left;
+    position: relative;
+    font-weight: 400;
+}
+
+/*Icons in the ProgressBar*/
+#progressbar #account:before {
+    font-family: FontAwesome;
+    content: "\f109";
+}
+
+#progressbar #personal:before {
+    font-family: FontAwesome;
+    content: "\f073";
+}
+
+#progressbar #payment:before {
+    font-family: FontAwesome;
+    content: "\f0ae";
+}
+
+#progressbar #confirm:before {
+    font-family: FontAwesome;
+    content: "\f030";
+}
+
+/*Icon ProgressBar before any progress*/
+#progressbar li:before {
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    display: block;
+    font-size: 20px;
+    color: #ffffff;
+    background: lightgray;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+    padding: 2px;
+}
+
+/*ProgressBar connectors*/
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: lightgray;
+    position: absolute;
+    left: 0;
+    top: 25px;
+    z-index: -1;
+}
+
+/*Color number of the step and the connector before it*/
+#progressbar li.active:before, #progressbar li.active:after {
+    background: #02ACEA;
+}
+
+/*Animated Progress Bar*/
+.progress {
+	height: 20px;
+}
+
+.progress-bar {
+	background-color: #02ACEA;
+}
+
+/*Fit image in bootstrap div*/
+.fit-image{
+    width: 100%;
+    object-fit: cover;
+}
+
+/* image select */
+label {
+    cursor: pointer;
+    filter: grayscale(100%);
+    color: gray;
+  }
+  
+  label:hover {
+    filter: grayscale(0);
+    color: #0B9DD5;
+  }
+
+  input[type="radio"]:checked + label {
+    filter: grayscale(0);
+    color: #0B9DD5;
+  }
+h1.nge-lab.mb-0 {
+    color: #0B9DD5 !important;
+}
+
+
+/* reservation invoice */
+.col-md-8.border.invoice {
+    box-shadow: 10px 10px 7px -3px rgba(0,0,0,0.35) !important;
+    -webkit-box-shadow: 10px 10px 7px -3px rgba(0,0,0,0.35);
+    -moz-box-shadow: 10px 10px 7px -3px rgba(0,0,0,0.35);
+}
+
+/* reservation invoice */
+.col-md-12.border.invoice {
+    box-shadow: 10px 10px 7px -3px rgba(0,0,0,0.35) !important;
+    -webkit-box-shadow: 10px 10px 7px -3px rgba(0,0,0,0.35);
+    -moz-box-shadow: 10px 10px 7px -3px rgba(0,0,0,0.35);
+}
+
+
+
+
+  /* This is to be able to center the content in the middle of the page; */
+  
+  .cat{
+    margin: 4px;
+    background-color: #ffffff;
+    color: black !important;
+    border-radius: 4px;
+    border: 1px solid #fff;
+    overflow: hidden;
+    float: left;
+    border-color: #000000;
+  }
+  
+  .cat label {
+    float: left; line-height: 3.0em;
+    width: 8.0em; height: 3.0em;
+    color: black !important;
+  }
+  
+  .cat label span {
+    text-align: center;
+    padding: 3px 0;
+    display: block;
+    color: rgb(0, 0, 0) !important;
+  }
+  
+  .cat label input {
+    position: absolute;
+    display: none;
+    color: rgb(255, 255, 255) !important;
+  }
+  
+  /* selects all of the text within the input element and changes the color of the text */
+  .cat label input + span{color: rgb(0, 0, 0);}
+  
+  
+  /* This will declare how a selected input will look giving generic properties */
+  .cat input:checked + span {
+      color: #000000;
+  }
+  
+  
+  /*
+  This following statements selects each category individually that contains an input element that is a checkbox and is checked (or selected) and chabges the background color of the span element.
+  */
+  
+  .jam input:checked + span{background-color: #64b6fa !important; color: white !important;}
+
+
+  button.dt-button.buttons-copy.buttons-html5 {
+    border: none;
+    color: white;
+    background-color: skyblue;
+}
+
+  

@@ -1,0 +1,81 @@
+/* BUTTON */
+.btn-user-prim {
+  border: none;
+  background: #0593d2;
+  border-radius: 29px;
+  font-weight: 600;
+  font-size: 5em;
+  line-height: 150%;
+  color: #ffffff;
+}
+.btn-user-prim:hover {
+  background: #fff;
+  color: #0593d2;
+  border: 1px solid #0593d2;
+}
+.btn-user-sec {
+  color: #0593d2;
+}
+.btn-user-sec:hover {
+  color: red;
+}
+
+/* LAYOUT */
+.layout-user {
+  position: relative;
+  width: 100%;
+  font-size: 4px;
+}
+.layout-user .row:nth-child(1) {
+  width: 90%;
+  background: #ecf2f6;
+  box-shadow: 2px 8px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 26px;
+  margin: 45px auto;
+}
+.layout-user .row .col {
+  padding: 0;
+}
+
+/* LEFT COLUMN */
+.layout-user .row .col:nth-child(1) .user-logo {
+  display: flex;
+  margin: 45px 55px 35px;
+}
+.layout-user .row .col:nth-child(1) .user-logo .logo-wrapper {
+  background-image: url("/img/signinupor/uns-logo.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 200px;
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+.layout-user .row .col:nth-child(1) .user-logo h1 {
+  font-weight: 700;
+  font-size: 9em;
+  line-height: 150%;
+  color: #0593d2;
+}
+.layout-user .row .col:nth-child(1) h2 {
+  font-weight: 600;
+  font-size: 10em;
+  line-height: 150%;
+  color: #43414b;
+  margin: 0 55px 30px;
+}
+.layout-user .row:nth-child(1) .col:nth-child(1) img {
+  /* height: 100%; */
+}
+
+/* RIGHT COLUMN */
+.layout-user .row .col:nth-child(2) {
+  background-color: white;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1200px) {
+  .layout-user .row:nth-child(1) .col:nth-child(1) img {
+    display: none;
+  }
+}

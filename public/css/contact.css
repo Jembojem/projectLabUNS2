@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 4px !important;
+  overflow-x: hidden;
+}
+
+/* HERO SECTION */
+#contact-hero {
+  width: 100%;
+  min-height: 895px;
+  position: relative;
+  background-image: url("/img/contact/hero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+/* HERO-TEXT */
+#contact-hero .contact-hero-text {
+  padding: 105px 100px 250px 100px;
+}
+#contact-hero .contact-hero-text h1 {
+  font-weight: 600;
+  font-size: 10em;
+  line-height: 120%;
+  color: #000000;
+}
+#contact-hero .contact-hero-text p {
+  font-weight: 300;
+  font-size: 5em;
+  line-height: 120%;
+  color: #000000;
+}
+/* HERO-CARD */
+#contact-hero .contact-hero-card {
+  width: 90%;
+  margin: 0 auto;
+}
+#contact-hero .contact-hero-card .card {
+  width: 100%;
+  max-width: 100%;
+  min-height: 325px;
+  padding: 0;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.25);
+}
+#contact-hero .contact-hero-card img {
+  width: 40px;
+  margin: 45px auto 32px;
+}
+#contact-hero .contact-hero-card a {
+  display: block;
+  font-weight: 500;
+  font-size: 8em;
+  line-height: 120.8%;
+  color: #0593d2;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+#contact-hero .contact-hero-card p {
+  font-weight: 500;
+  font-size: 4em;
+  line-height: 118.75%;
+  color: #000000;
+}
+
+/* LOCATION SECTION */
+/* LOCATION-FORM */
+#contact-location {
+  width: 100%;
+  position: relative;
+  background-image: url("/img/contact/peta2.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#contact-location .row .col:nth-child(2) {
+  background: #fff;
+}
+#contact-location .row .col:nth-child(1) button {
+  position: absolute;
+  bottom: 0;
+  border: none;
+  width: 400px;
+  height: 50px;
+  background: #5ac2f0;
+  font-weight: 300;
+  font-size: 7em;
+  line-height: 121.428%;
+  color: #ffffff;
+}
+#contact-location .row .col:nth-child(1) button:hover {
+  color: rgb(95, 41, 41);
+}
+#contact-location h2 {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 121.43%;
+  color: #0593d2;
+  padding: 90px 35px 50px;
+}
+#contact-location form {
+  padding: 0 35px 75px;
+  font-size: 4em;
+  color: #000;
+}
+#contact-location form button {
+  position: absolute;
+  right: 35px;
+  border: none;
+  width: 200px;
+  height: 55px;
+  background: #5ac2f0;
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+#contact-location form button:hover {
+  color: rgb(95, 41, 41);
+}
+#contact-location p {
+  margin: 75px 60px 105px;
+  font-weight: 200;
+  font-size: 4em;
+  line-height: 118.75%;
+  text-align: justify;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  #contact-hero .col {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 576px) {
+  #contact-hero .contact-hero-text {
+    padding: 0;
+    width: 80%;
+    margin: auto;
+    padding: 70px 0 50px;
+  }
+}

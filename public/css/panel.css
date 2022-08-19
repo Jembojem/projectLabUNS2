@@ -1,0 +1,36 @@
+button.dt-button.buttons-copy.buttons-html5 {
+    color: white;
+    border: none;
+    background-color: skyblue;
+}
+button.dt-button.buttons-excel.buttons-html5 {
+    color: white;
+    background-color: #00c300;
+    border: none;
+}
+button.dt-button.buttons-csv.buttons-html5 {
+    background-color: #ed0ded;
+    color: white;
+    border: none;
+}
+button.dt-button.buttons-pdf.buttons-html5 {
+    color: white;
+    background-color: red;
+    border: none;
+}
+button.dt-button.buttons-copy.buttons-html5:hover {
+    background-color: deepskyblue;
+    border: none;
+}
+button.dt-button.buttons-excel.buttons-html5:hover {
+    background-color: #0be40b;
+    border: none;
+}
+button.dt-button.buttons-csv.buttons-html5:hover {
+    background-color: #cf0acf;
+    border: none;
+}
+button.dt-button.buttons-pdf.buttons-html5:hover {
+    background-color: rgb(206, 10, 10);
+    border: none;
+}
